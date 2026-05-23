@@ -1,0 +1,55 @@
+---
+// src/components/astro/HeroSection.astro
+---
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#07080A]">
+  {/* Ambient Glow */}
+  <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+    <div class="w-[600px] h-[600px] bg-white/[0.03] blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Main Content */}
+  <div class="relative z-10 container mx-auto px-6 py-24 text-center flex flex-col items-center">
+    
+    {/* System Status Badge */}
+    <div class="inline-flex items-center gap-2 px-3 py-1 mb-8 rounded-full bg-white/[0.03] border border-white/[0.08]">
+      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-400">System Online</span>
+    </div>
+
+    {/* Hero Headline */}
+    <h1 class="text-5xl md:text-7xl font-semibold tracking-tighter leading-tight text-white mb-6">
+      Institutional-Grade Alpha. <br />
+      <span class="text-zinc-500">Built for Precision.</span>
+    </h1>
+
+    {/* Hero Description */}
+    <p class="text-lg md:text-xl font-light text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Sistem kuantitatif tingkat lanjut yang menargetkan tren makro global dan volatilitas. Arsitektur berkinerja tinggi yang memastikan eksekusi deterministik dan manajemen risiko absolut.
+    </p>
+
+    {/* Call to Action Buttons */}
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+      <a href="#pricing" class="w-full sm:w-auto px-8 py-3 bg-white text-black rounded-md text-[13px] font-medium transition-all outline-none hover:bg-zinc-200 hover:scale-[0.98] hover:shadow-[0_0_24px_rgba(255,255,255,0.15)] focus:ring-2 focus:ring-white/20">
+        Request Allocation
+      </a>
+      <a href="#architecture" class="w-full sm:w-auto px-8 py-3 bg-transparent text-white border border-white/[0.15] rounded-md text-[13px] font-medium transition-all outline-none hover:bg-white/[0.05] focus:ring-2 focus:ring-white/20">
+        View Architecture
+      </a>
+    </div>
+
+    {/* Affiliate Partners Grid */}
+    <div class="mt-28 w-full max-w-4xl border-t border-white/[0.04] pt-8">
+      <p class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-8">Supported Execution Partners</p>
+      <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-40 grayscale transition-opacity hover:opacity-70">
+        {/* Placeholder for Logos - Text used for prototype */}
+        <span class="font-semibold text-lg tracking-widest text-white">MRG</span>
+        <span class="font-semibold text-lg tracking-widest text-white">PEPPERSTONE</span>
+        <span class="font-semibold text-lg tracking-widest text-white">VANTAGE</span>
+        <span class="font-semibold text-lg tracking-widest text-white">IC MARKETS</span>
+        <span class="font-semibold text-lg tracking-widest text-white">IBKR</span>
+        <span class="font-semibold text-lg tracking-widest text-white">DUKASCOPY</span>
+      </div>
+    </div>
+
+  </div>
+</section>
